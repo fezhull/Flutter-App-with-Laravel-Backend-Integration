@@ -30,6 +30,7 @@ Follow these steps to set up and run the Flutter application locally:
 ## 1. Clone the Repository
 ## Clone this repository to your local machine:
 git clone https://github.com/yourusername/property-management-flutter.git
+
 cd property-management-flutter
 ## 2. Install Flutter SDK
 If you don’t have Flutter installed yet, follow the installation guide for your platform from the official Flutter Documentation.
