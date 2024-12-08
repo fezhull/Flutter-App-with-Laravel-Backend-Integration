@@ -8,8 +8,22 @@ This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Fetch properties from the backend and display them in a list.
+- Add properties with a form to submit data to the backend.
+- Edit properties by modifying existing property details.
+- Delete properties directly from the list.
+- State Management using BLoC for efficient and maintainable state handling.
+
+## Tech Stack
+- Flutter: A framework to build natively compiled applications for mobile from a single codebase.
+- BLoC: A pattern to manage state and business logic using streams.
+- HTTP: A package used to make requests to the Laravel backend API.
+- JSON: For serializing and deserializing data between the frontend and backend.
+
+## Requirements
+- Flutter: Install Flutter SDK to run the project.
+- Laravel Backend: A running Laravel backend API that serves property data (Refer to the backend README).
+- Postman: For testing API endpoints (if needed for debugging).
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
