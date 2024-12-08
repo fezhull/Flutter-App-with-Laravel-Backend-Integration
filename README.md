@@ -22,7 +22,7 @@ A few resources to get you started if this is your first Flutter project:
 
 ## Requirements
 - Flutter: Install Flutter SDK to run the project.
-- Laravel Backend: A running Laravel backend API that serves property data (Refer to the backend [README]).
+- Laravel Backend: A running Laravel backend API that serves property data (Refer to the backend [README](https://github.com/yourusername/property-management-backend).
 - Postman: For testing API endpoints (if needed for debugging).
 
 For help getting started with Flutter development, view the
