@@ -52,7 +52,7 @@ flutter run
 
 The app should launch on your device/emulator.
 
-## Screens Iu
+## Screens UI
 
 <img width="197" alt="Screenshot 2024-12-08 174539" src="https://github.com/user-attachments/assets/b7cd6b29-0cd7-4cca-b1ce-d2a081f79eeb">
 
