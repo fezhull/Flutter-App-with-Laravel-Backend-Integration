@@ -69,9 +69,9 @@ The app follows a clean architecture, separating the business logic, UI, and mod
 
 lib/
 
-├── cubits/
+├── Bloc/
 
-│   ├── property_cubit.dart  # BLoC logic for property management (CRUD operations)
+│   ├── property_Bloc.dart  # BLoC logic for property management (CRUD operations)
 
 ├── models/
 
@@ -113,9 +113,7 @@ The BLoC pattern is used to separate the business logic from the UI. This provid
 
 - Scalability: It’s easier to scale and add more features as the project grows.
 
-##PropertyCubit
 
-The PropertyCubit is the heart of the application’s state management. It fetches data from the backend API, handles CRUD operations,
 
 and updates the UI by emitting different states.
 
