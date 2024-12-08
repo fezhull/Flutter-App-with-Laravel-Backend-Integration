@@ -52,6 +52,17 @@ flutter run
 
 The app should launch on your device/emulator.
 
+## Screens Iu
+
+<img width="197" alt="Screenshot 2024-12-08 174539" src="https://github.com/user-attachments/assets/b7cd6b29-0cd7-4cca-b1ce-d2a081f79eeb">
+
+
+<img width="206" alt="Screenshot 2024-12-08 174626" src="https://github.com/user-attachments/assets/3ebfcef6-8a53-4a9a-b189-aacd50930df4">
+
+<img width="203" alt="Screenshot 2024-12-08 174646" src="https://github.com/user-attachments/assets/d44156cf-1f3f-4b23-8e92-9d45120d9b57">
+
+
+
 ## Folder Structure
 
 The app follows a clean architecture, separating the business logic, UI, and model components. Below is the folder structure:
