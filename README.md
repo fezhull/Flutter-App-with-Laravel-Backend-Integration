@@ -57,14 +57,23 @@ The app should launch on your device/emulator.
 The app follows a clean architecture, separating the business logic, UI, and model components. Below is the folder structure:
 
 lib/
+
 ├── cubits/
-│   ├── property_cubit.dart       # BLoC logic for property management (CRUD operations)
+
+│   ├── property_cubit.dart  # BLoC logic for property management (CRUD operations)
+
 ├── models/
+
 │   ├── property.dart            # Property model to structure data
+
 ├── screens/
+
 │   ├── property_list_screen.dart  # Screen that lists properties
+
 │   ├── add_property_screen.dart  # Screen for adding a new property
+
 │   ├── edit_property_screen.dart # Screen for editing an existing property
+
 └── main.dart                     # Main entry point of the app
 
 ## Key Files
@@ -76,69 +85,99 @@ It handles fetching, adding, updating, and -deleting properties by interacting w
 ## Screens:
 
 - PropertyListScreen (lib/screens/property_list_screen.dart): Displays the list of properties.
+
 - AddPropertyScreen (lib/screens/add_property_screen.dart): A form for adding a new property.
+
 - EditPropertyScreen (lib/screens/edit_property_screen.dart): A form for editing an existing property.
 
 ## BLoC (Business Logic Component)
+
 ## Why BLoC?
+
 The BLoC pattern is used to separate the business logic from the UI. This provides several benefits:
 
 - Separation of concerns: The UI and business logic are decoupled.
+
 - Testability: Business logic can be easily tested.
+
 - Scalability: It’s easier to scale and add more features as the project grows.
 
 ##PropertyCubit
+
 The PropertyCubit is the heart of the application’s state management. It fetches data from the backend API, handles CRUD operations,
+
 and updates the UI by emitting different states.
 
 Example Usage:
 / Fetch properties
+
 context.read<PropertyCubit>().fetchProperties();
 
 // Add a new property
+
 context.read<PropertyCubit>().addProperty(Property(...));
 
 // Delete a property
+
 context.read<PropertyCubit>().deleteProperty(propertyId);
 
 
 ## States of PropertyCubit:
+
 ## The PropertyCubit emits the following states:
 
 - InitialState: When the app starts or the list is empty.
+
 - LoadingState: When data is being fetched or an action is being performed.
+
 - LoadedState: When the data (properties) is successfully fetched.
+
 - ErrorState: When there’s an issue with fetching or interacting with the backend.
 
 ## API Interaction
+
 The app communicates with the backend API using the HTTP package. Below are the API endpoints used in the app:
 
 ## API Endpoints
 - GET /api/properties: Fetches a list of all properties.
+
 - POST /api/properties: Adds a new property.
+
 - PUT /api/properties/{id}: Updates an existing property.
+
 - DELETE /api/properties/{id}: Deletes a property.
   
-Make sure your Laravel API is running and accessible at the URL specified in the lib/cubits/property_cubit.dart file. You can use Postman to test the API and confirm it’s working properly.
+Make sure your Laravel API is running and accessible at the URL specified in the lib/cubits/property_cubit.dart file. You can use Postman to test the API and confirm it’s 
+
+working properly.
 
 ## Testing
+
 ## Unit Testing
+
 To ensure the app works correctly, you can write unit tests for the PropertyCubit to verify the state changes and ensure that the business logic works as expected.
 
 ## Widget Testing
+
 Test individual widgets to verify that the UI components display the correct data and interact with the PropertyCubit as expected.
 
 ## Integration Testing
+
 Integration tests allow you to verify that the app communicates correctly with the backend API and that the frontend and backend work together as expected.
 
 ## Contribution
+
 Feel free to fork this repository and submit issues and pull requests. Contributions are welcome!
 
 ## License
+
 This project is open source and available under the MIT License.
 
 ## Conclusion
-This Flutter app provides an intuitive and functional interface for managing properties in the Property Management System. Using BLoC for state management, the app is scalable, testable, and easy to maintain. The app communicates with a Laravel backend API to manage property data, allowing for
+
+This Flutter app provides an intuitive and functional interface for managing properties in the Property Management System. Using BLoC for state management, the app is 
+
+scalable, testable, and easy to maintain. The app communicates with a Laravel backend API to manage property data, allowing for
 
 
 
